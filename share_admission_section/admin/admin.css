@@ -1,0 +1,45 @@
+*{
+    font-family: sans-serif;
+}
+
+
+header{
+    background: rgb(27,73,101);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.heading{
+    color: white!important;
+    font-size: 1.5rem;
+
+}
+.wrapper{
+    height: 100vh;
+}
+h3{
+    padding:2px;
+    margin:10px;
+}
+hr{
+    text-align: center;
+    margin-left:30% ;
+    margin-right: 30%;
+    max-width: 400px;
+    border-color: #999999;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width: 770px) {
+    .heading{
+        color: white!important;
+        font-size: 1rem;
+    
+    }
+    .container{
+        width: 90%;
+    }
+  }

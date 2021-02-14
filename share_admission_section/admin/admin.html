@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      
+      
+      
+      .container{
+        width: 80%;
+        
+      }
+      .wrapper{
+        background: rgb(98,182,203);
+      
+        padding-top: 50px;
+        
+      }
+     
+      .signup,
+      .login{
+        width: 50%;
+        background: #fff;
+        float: left;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      
+      .signup-form{
+        background: #fff;
+        padding: 40px;
+        clear: both;
+        width: 100%;
+        box-sizing: border-box;
+        height: 400px;
+      }
+      .login-form{
+        background: #fff;
+        padding: 40px;
+        clear: both;
+        width: 100%;
+        box-sizing: border-box;
+        height: 310px;
+      }
+      .input{
+        width: 100%;
+        height: 60px;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+        border: 2px solid #e9eaea;
+        color: #3e3e40;
+        font-size: 14px;
+        outline: none;
+        transform: all 0.5s ease;
+      }
+      
+      .input:focus{
+        border: 2px solid #34b3a0;
+      }
+      
+      .btn{
+        width: 100%;
+        background: #34b3a0;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+      
+      span a{
+        text-decoration: none;
+        color: #000;
+      }
+      
+      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #3e3e40;
+        font-family: roboto;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        color: #3e3e40;
+        font-family: roboto;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        color: #3e3e40;
+        font-family: roboto;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        color: #3e3e40;
+        font-family: roboto;
+      }
+      
+@media only screen and (max-width: 770px) {
+  .container{
+      width: 90%;
+  }
+}
+   
+      
+ 
+    </style>
+   
+    <script>
+      $(document).ready(function(){
+        $(".login-form").hide();
+$(".login").css("background", "rgb(241,241,241)");
+
+$(".login").click(function(){
+  $(".signup-form").hide();
+  $(".login-form").show();
+  $(".signup").css("background", "rgb(241,241,241)");
+  $(".login").css("background", "#fff");
+});
+
+$(".signup").click(function(){
+  $(".signup-form").show();
+  $(".login-form").hide();
+  $(".login").css("background", "rgb(241,241,241)");
+  $(".signup").css("background", "#fff");
+});
+
+$(".btn").click(function(){
+  $(".input").val("");
+});
+      });
+    </script>
+</head>
+<body>
+    <header>
+        
+    <div class="container">
+        <div class="mt-5 mb-5 ">
+            <h3 class="heading  text-center">JSS MAHAVIDYAPEETHA</h1>
+            <h3 class="heading text-center">JSS SCIENCE & TECHNOLOGY UNIVERSITY</h1>
+            <h3 class="heading text-center">SRI JAYACHAMARAJENDRA COLLEGE OF ENGINEERING</h1>
+            <hr>
+            <h3 class="heading text-center">PLACEMENT & TRAINING CELL</h1>
+        </div>
+    </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="container">
+        
+        <div class="signup user">User</div>
+        <div class="login admin">Admin</div>
+        
+         <div class="signup-form user-form">
+            <input type="text" placeholder="Your Email Address" name="user_email" id="user_email" class="input"><br />
+            <input type="text" placeholder="Choose a Username" name="user_name" id="user_name" class="input"><br />
+            <input type="password" placeholder="Password" name="user_password" id="user_password" class="input"><br />
+            <div class="btn" name="admin_login" id="admin_login">log in</div>
+         </div>
+        
+        <div class="login-form admin-form">
+            <input type="text" placeholder="Email or Username" name="admin_email" id="admin_email" class="input"><br />
+            <input type="password" placeholder="Password" name="password" id="password" class="input"><br />
+            <div class="btn" name="user_login" id="admin_login">log in</div>
+           
+         </div>
+        
+      </div>
+    </div>
+  
+  
+  
+
+</body>
+
+</html>

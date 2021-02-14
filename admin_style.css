@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #1B4965;
+    color: #ffffff;
+    padding: 10%;
+    line-height: 150%;
+    display: block;
+    text-align: center;
+}
+
+
+main{
+    background-color: #add8e6;
+}
+
+
+table, th, td{
+
+    height: 5%;
+    line-height: 2%;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0 auto;
+    padding: 1%;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+
+th{
+    text-align: center;
+    background-color: #1B4965;
+    background-image: linear-gradient(10deg, #1B4965, #eeeeee);
+    color: #ffffff;
+    height: 10%;
+    box-sizing: border-box;
+    margin: 1%;
+    padding: 1%;
+}
+
+td{
+    text-align: center;
+}
+
+tr{
+    background-color: #aaaaaa;
+    opacity: 0.7;
+}
+
+tr:hover{
+    opacity: 1;
+}
+
+#modifybn{
+    background-color: #10A5F5;
+    color: #ffffff;
+    margin: 1%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+#deletebn{
+    background-color: #B53737;
+    color: #ffffff;
+    margin: 1%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+
+.search{
+    float: right;
+    height: 3%;
+    margin: 1%;
+    text-align: block;
+    background-color: #1B4965;
+    color: #ffffff;
+    border-radius: 4px;
+
+}
+
+#add{
+    float: left;
+    margin: 1%;
+    padding: 1%;
+}
+div a{
+float: right;
+height: 10%;
+padding: 1%;
+}
+
+form button, a button{
+    background-color: #1B4965;
+    color: #ffffff;
+}
